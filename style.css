@@ -379,6 +379,7 @@ button:focus{
     margin: 0 10px;
     background-color: rgba(255, 255, 255, 0.582);
     border-radius: 5px;
+    margin-left: 5px;
 }
 
 .input button{
@@ -422,7 +423,7 @@ input:focus{
     scrollbar-width: none;  /* Firefox */
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1400px) {
   .container{
     width: 100vw;
     height: 99vh;
@@ -430,15 +431,22 @@ input:focus{
   }
 
   .input input{
-    margin: 0 auto;
-    margin-left: 5px;
     padding: 15px 0;
     max-width: 95vw;
   }
   .input button{
-    margin-left: -60px;
+    margin-left: -70px;
 }
   .bot-head img{
     width: 20vw;
   }
+}
+@media screen and (max-width:400px){
+  .input input{
+    max-width: 88vw;
+    margin: 0;
+  }
+  .input button{
+    margin-left: -40px;
+}
 }
