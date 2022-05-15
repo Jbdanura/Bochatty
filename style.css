@@ -335,6 +335,7 @@ button:focus{
     font-family:'Courier New', Courier, monospace;
     width: 65vw;
     margin: 20px auto;
+    margin-bottom: 0px;
     background-color: rgba(0, 0, 0, 0.63);
     border-radius: 5px;
     min-height: 95vh;
@@ -375,11 +376,10 @@ button:focus{
 .input input{
     width: 93%;
     border: none;
-    padding: 15px 10px;
-    margin: 0 10px;
+    padding: 15px 10px;;
     background-color: rgba(255, 255, 255, 0.582);
     border-radius: 5px;
-    margin-left: 5px;
+    margin-left: 20px;
 }
 
 .input button{
@@ -423,38 +423,48 @@ input:focus{
     scrollbar-width: none;  /* Firefox */
 }
 
-@media screen and (max-width:1300px) {
-  .container{
-    width: 100vw;
-    height: 99vh;
-    margin: 10px 0;
-  }
-  .messages{
-    max-height: 66vh;
-    overflow-y:scroll;
-}
-  .input input{
-    padding: 15px 0;
-    max-width: 95vw;
-  }
-  .input button{
-    margin-left: -70px;
-}
-  .bot-head img{
-    width: 20vw;
-  }
+.made{
+  color: rgba(255, 255, 255, 0.466);
+  float: right;
+  margin-right: 5px;
 }
 
-@media screen and (max-height:600px){
-  .messages{
-    max-height: 50vh;
+
+@media screen and (max-width: 1300px) {
+  .bot-head img{
+    width: 18vw;
+  }
+ .container{
+   width: 100vw;
+   height: 100vh;
+   margin: 0;
+   margin-bottom: 5px;
+ } 
+ .input input{
+  width: 90%;
+}
+}
+
+@media screen and (max-width: 800px) {
+  .input input{
+    width: 80%;
   }
 }
-@media screen and (max-width:600px){
-  .input input{
-    max-width: 90vw;
-  }
+@media screen and (max-width: 300px){
+ .messages{
+   font-size: 13px;
+ } 
+ .input input{
+  width: 70%;
+}
+}
+@media screen and (max-height: 800px){
   .messages{
     max-height: 75vh;
+  }
 }
+@media screen and (max-height: 600px){
+  .messages{
+    max-height: 63vh;
+  }
 }
