@@ -23,7 +23,7 @@ button.addEventListener("click",async function(){
         generateMessage(myMessage,false)
         messages.scrollTop = messages.scrollHeight
         try{
-            const response = await fetch("/message",{
+            const response = await fetch(`${window.location.href}/message`,{
                 method:"POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
