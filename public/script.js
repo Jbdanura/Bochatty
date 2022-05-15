@@ -21,6 +21,7 @@ button.addEventListener("click",async function(){
     input.value = ""
     if(myMessage.trim().length != 0){
         generateMessage(myMessage,false)
+        messages.scrollTop = messages.scrollHeight
         try{
             const response = await fetch("http://localhost:3003",{
                 method:"POST",
@@ -30,7 +31,6 @@ button.addEventListener("click",async function(){
                 })
             })
             const body = await response.json()
-            console.log(body)
             generateMessage(body,true)
         }catch(error){
             console.log(error)

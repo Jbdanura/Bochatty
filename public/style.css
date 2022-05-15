@@ -374,7 +374,7 @@ button:focus{
 }
 
 .input input{
-    width: 93%;
+    width: 90%;
     border: none;
     padding: 15px 10px;;
     background-color: rgba(255, 255, 255, 0.582);
@@ -432,7 +432,7 @@ input:focus{
 
 @media screen and (max-width: 1300px) {
   .bot-head img{
-    width: 18vw;
+    width: 10vw;
   }
  .container{
    width: 100vw;
@@ -449,6 +449,9 @@ input:focus{
   .input input{
     width: 80%;
   }
+  .bot-head img{
+    width: 23vw;
+  }
 }
 @media screen and (max-width: 300px){
  .messages{
@@ -458,6 +461,7 @@ input:focus{
   width: 70%;
 }
 }
+
 @media screen and (max-height: 800px){
   .messages{
     max-height: 75vh;
