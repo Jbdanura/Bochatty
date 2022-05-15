@@ -410,7 +410,7 @@ input:focus{
 }
 
 .messages{
-    max-height: 77vh;
+    max-height: 80vh;
     overflow-y:scroll;
 }
 
@@ -423,13 +423,16 @@ input:focus{
     scrollbar-width: none;  /* Firefox */
 }
 
-@media screen and (max-width:1400px) {
+@media screen and (max-width:1100px) {
   .container{
     width: 100vw;
     height: 99vh;
     margin: 10px 0;
   }
-
+  .messages{
+    max-height: 75%;
+    overflow-y:scroll;
+}
   .input input{
     padding: 15px 0;
     max-width: 95vw;
@@ -441,12 +444,14 @@ input:focus{
     width: 20vw;
   }
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:600px){
   .input input{
-    max-width: 88vw;
-    margin: 0;
+    max-width: 90vw;
   }
-  .input button{
-    margin-left: -40px;
 }
+
+@media screen and (max-height:600px){
+  .messages{
+    max-height: 50vh;
+  }
 }
