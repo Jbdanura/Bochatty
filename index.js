@@ -9,7 +9,7 @@ app.use(cors())
 app.use(express.json())
 app.use(express.static(__dirname + '/public'));
 
-app.post("/", async function(req,res){
+app.post("/message", async function(req,res){
     const result = await bot(req.body.message)
     res.json(result)
 })
