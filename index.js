@@ -1,7 +1,8 @@
+require("dotenv").config()
+
 const express = require('express')
 const app = express()
 const cors = require('cors')
-const config = require("./utils/config")
 const bot = require("./bot")
 const path = require('path');
 
@@ -18,6 +19,6 @@ app.get("/", function(req,res){
   res.sendFile(path.join(__dirname, "./index.html"))
 })
 
-app.listen(config.PORT, () => {
-  console.log(`Server running on port ${config.PORT}`)
+app.listen(process.env.PORT, () => {
+  console.log(`Server running on port ${process.env.PORT}`)
 })
