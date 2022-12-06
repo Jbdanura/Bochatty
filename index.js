@@ -6,9 +6,9 @@ const cors = require('cors')
 const bot = require("./bot")
 const path = require('path');
 
-const http = require("http");
+const https = require("https");
 setInterval(function() {
-    http.get("https://bochatty.onrender.com");
+    https.get("https://bochatty.onrender.com");
 }, 300000);
 
 app.use(cors())
