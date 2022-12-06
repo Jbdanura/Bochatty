@@ -6,6 +6,11 @@ const cors = require('cors')
 const bot = require("./bot")
 const path = require('path');
 
+const http = require("http");
+setInterval(function() {
+    http.get("https://bochatty.onrender.com");
+}, 300000);
+
 app.use(cors())
 app.use(express.json())
 app.use(express.static(__dirname + '/public'));
