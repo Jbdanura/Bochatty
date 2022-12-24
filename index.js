@@ -9,7 +9,7 @@ const path = require('path');
 const https = require("https");
 setInterval(function() {
     https.get("https://bochatty.onrender.com");
-}, 300000);
+}, 900000);
 
 app.use(cors())
 app.use(express.json())
